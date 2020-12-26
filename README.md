@@ -23,11 +23,15 @@ $ cp .env-laradock laradock/.env
 ```
 
 ```
-$ docker-compose up -d 
+$ cd laradock
 ```
 
 ```
-$ ./dc.sh composer install
+$ docker-compose up -d nginx mysql rabbitmq workspace
+```
+
+```
+$ docker exec workspace bash composer install
 ```
 
 #### Project is running at `http://localhost`
