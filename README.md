@@ -15,6 +15,14 @@ $ cp .env .env.local
 ```
 
 ```
+$ git submodule update --init --recursive
+```
+
+```
+$ cp .env-laradock laradock/.env
+```
+
+```
 $ docker-compose up -d 
 ```
 
